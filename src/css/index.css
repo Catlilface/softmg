@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+:root {
+  --softmg-color: #6248FF;
+  --softmg-color-hover: #4a31d8;
+  --light-grey: #fafafa;
+  --grey: #2d275180;
+}
+
+body {
+  background-image: url('/assets/softmg.ru_.png');
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+}
+
+.home-image {
+  width: 100%;
+}
+
+.main-menu {
+  position: fixed;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 144px);
+  padding: 0 72px;
+  font-size: 1em;
+}
+
+.main-nav-elements, .main-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.main-nav-contacts {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.leave-query {
+  padding: 12px 16px;
+  background-color: var(--softmg-color);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.leave-query::before {
+  content: url('src/assets/circle.svg');
+  margin-right: 10px;
+  position: relative;
+  top: -3px
+}
+
+.leave-query:hover {
+  background-color: var(--softmg-color-hover);
+}
+
+.drop::after {
+  content: url('src/assets/icon.svg');
+  margin-left: 7.5px;
+  transition: .2s;
+}
+
+.menu-element {
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.drop:hover::after {
+  transform: rotate(180deg) translateY(-3px);
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  width: 800px;
+  height: calc(5 * (1em + 40px) + 50px * 2);
+  top: 72px;
+  margin-left: -40px;
+  padding-top: 10px;
+}
+
+.dropdown-main, .dropdown-secondary {
+  width: 50%;
+  padding: 36px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-main {
+  background-color: var(--light-grey);
+  border-radius: 24px 0 0 24px;
+}
+
+.dropdown-secondary {
+  background-color: #fff;
+  border-radius: 0 24px 24px 0;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.dropdown-secondary::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown-item {
+  padding: 20px 24px;
+  transition: .2s;
+}
+
+.drop:hover .dropdown {
+  display: flex;
+}
+
+.dropdown-main .dropdown-item:hover {
+  color: var(--softmg-color);
+}
+
+.show-children::after {
+  content: url('./src/assets/Iconarrow.svg');
+  float: right;
+  transition: .2s;
+  opacity: 0;
+}
+
+.show-children:hover::after {
+  opacity: 1;
+  transform: translateX(20px);
+}
+
+.dropdown-secondary .dropdown-item:hover {
+  background-color: var(--light-grey);
+  border-radius: 14px;
+}

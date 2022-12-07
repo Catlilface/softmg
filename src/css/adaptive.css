@@ -1,0 +1,113 @@
+.mobile-nav-items {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 63px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: #fff;
+  transition: .4s;
+  border-top: 1px solid rgba(45, 39, 81, 0.1);
+  overflow: auto;
+}
+
+.mobile-nav-items .drop {
+  justify-content: space-between;
+}
+
+.mobile-nav-items .drop::after {
+  margin-right: 20px;
+}
+
+.white-space {
+  min-height: 260px;
+}
+
+.mobile-contacts {
+  max-width: calc(100vw - 50px);
+  transition: .4s;
+  position: fixed;
+  bottom: 0;
+  padding: 24px;
+  border-top: 1px solid rgba(45, 39, 81, 0.1);
+  background-color: #fff;
+}
+
+.leave-query.mobile {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.communicate {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.option {
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(45, 39, 81, 0.5);
+}
+
+@media screen and (min-width: 1300px) {
+  .mobile-main-nav-elements {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-nav-elements {
+    display: none;
+  }
+  .menu-element {
+    z-index: 110
+  }
+  .main-nav-contacts {
+    display: none;
+  }
+  .main-menu {
+    padding: 10px 20px;
+    width: calc(100vw - 40px)
+  }
+  .main-nav {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+  }
+  .mobile-burger {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-nav-items .drop.opened::after {
+    transform: rotate(180deg) translateY(-3px);
+  }
+  .drop:hover::after {
+    transform: unset;
+  }
+  .dropdown-children-items {
+    flex-direction: column;
+    z-index: 109;
+    display: none;
+    background-color: #f9f9f9;
+    padding: 7px 0;
+  }
+  .drop.opened + .dropdown-children-items {
+    display: flex;
+  }
+  .dropdown-item {
+    padding: 15.5px 24px;
+    width: 100%;
+  }
+  .dropdown-children-items .active {
+    background-color: rgba(98, 72, 255, 0.1);
+    color: var(--softmg-color)
+  }
+  .menu-element {
+    height: unset;
+  }
+}

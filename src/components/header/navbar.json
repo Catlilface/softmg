@@ -1,0 +1,116 @@
+[
+  {
+    "item": "Услуги",
+    "href": "#",
+    "children": [
+      {
+        "item": "Разработка сайтов",
+        "href": "123",
+        "children": [
+          {
+            "item": "Дизайн",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Framework",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Landing Page",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Интернет-магазин",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Визитка",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Корпоративный",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Интерактивный",
+            "href": "123",
+            "children": []
+          }
+        ]
+      },
+      {
+        "item": "Разработка приложений",
+        "href": "123",
+        "children": []
+      },
+      {
+        "item": "Тех. поддержка",
+        "href": "#",
+        "children": []
+      },
+      {
+        "item": "Продвижение",
+        "href": "123",
+        "children": [
+          {
+            "item": "SEO",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Yandex",
+            "href": "123",
+            "children": []
+          },
+          {
+            "item": "Google",
+            "href": "123",
+            "children": []
+          }
+        ]
+      },
+      {
+        "item": "Другие направления",
+        "href": "123",
+        "children": []
+      }
+    ]
+  },
+  {
+    "item": "Кейсы",
+    "href": "123",
+    "children": []
+  },
+  {
+    "item": "О нас",
+    "href": "123",
+    "children": [
+      {
+        "item": "Новости",
+        "href": "Услуга 2",
+        "children": []
+      },
+      {
+        "item": "Вакансии",
+        "href": "Услуга 2",
+        "children": []
+      }
+    ]
+  },
+  {
+    "item": "Цены",
+    "href": "123",
+    "children": []
+  },
+  {
+    "item": "Контакты",
+    "href": "123",
+    "children": []
+  }
+]
