@@ -8,7 +8,6 @@
 }
 
 body {
-  background-image: url('/assets/softmg.ru_.png');
   margin: 0;
   font-family: 'Manrope', sans-serif;
   font-weight: 600;
@@ -107,6 +106,10 @@ a {
   border-radius: 24px 0 0 24px;
 }
 
+.dropdown-main:not(.round-edge) {
+  border-radius: 24px;
+}
+
 .dropdown-secondary {
   background-color: #fff;
   border-radius: 0 24px 24px 0;
@@ -147,4 +150,14 @@ a {
 .dropdown-secondary .dropdown-item:hover {
   background-color: var(--light-grey);
   border-radius: 14px;
+}
+
+.page-not-found-error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: var(--softmg-color);
 }
