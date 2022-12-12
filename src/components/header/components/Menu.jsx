@@ -53,7 +53,7 @@ const Dropdown = (props) => {
 
 const Menu = (props) => (
   <>
-    <MobileMenu items={ props.menu } />
+    <MobileMenu items={ props.menu } contacts={ props.contacts } />
     <div className="main-nav-elements">
       {
         props.menu.map((value, index) => (

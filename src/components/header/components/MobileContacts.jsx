@@ -1,23 +1,6 @@
-const MobileContacts = (props) => {
+export const MobileContacts = (props) => {
 
-  const options = {
-    phone: {
-      show: true,
-      link: '+7 (495) 978-15-05'
-    },
-    email: {
-      show: true,
-      link: 'support@softmg.ru'
-    },
-    whatsapp: {
-      show: true,
-      link: '#'
-    },
-    telegram: {
-      show: true,
-      link: '#'
-    }
-  }
+  const options = props.contacts
   
   return (
     <div style={{ right: props.margin }} className="mobile-contacts">
@@ -38,8 +21,8 @@ const MobileContacts = (props) => {
             </a>
         }
         {
-          options.whatsapp.show &&
-            <a href={ options.whatsapp.link } className="option">
+          options.whatsApp.show &&
+            <a href={ options.whatsApp.link } className="option">
               <img src="./src/assets/bobile-whatsapp.svg" />
               <span>WhatsApp</span>
             </a>

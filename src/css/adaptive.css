@@ -45,6 +45,7 @@
   justify-content: space-evenly;
   padding: 20px 0;
   flex-wrap: wrap;
+  width: 100vw;
 }
 
 .option {

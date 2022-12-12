@@ -4,7 +4,7 @@ import MobileContacts from './MobileContacts'
 
 const MobileMenu = (props) => {
   let [isOpened, setIsOpened] = useState(false)
-  
+
   const handleSubMenu = (event) => {
     event.currentTarget.classList.toggle('opened')
   }
@@ -81,7 +81,7 @@ const MobileMenu = (props) => {
           ))
         }
         <div className="white-space"></div>
-        <MobileContacts margin={ -!isOpened * 100 + 'vw' } />
+        <MobileContacts margin={ -!isOpened * 100 + 'vw' } contacts={ props.contacts } />
       </div>
     </div>
   )
